@@ -3,15 +3,6 @@
 <head>
 <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 
-<script>
-function show(shown) {
-  document.getElementById("SEMBED").style.display='none';
-  document.getElementById("Home").style.display='none';
-  document.getElementById("ICIL").style.display='none';
-  document.getElementById(shown).style.display='block';
-  return false;
-}
-</script>
 
 <style>
 h2   {color: navy;}
@@ -24,8 +15,6 @@ h3   {color: darkcyan;}
 
 <body topmargin="15" leftmargin="15">
 
-    <!-- HOME PAGE -->
-    <div id="Home">
         <h1>Michael Wray</h1>
 
         <h2><b>Email:</b> michael (dot) wray (at) bristol (dot) ac (dot) uk</h2>
@@ -40,9 +29,9 @@ h3   {color: darkcyan;}
         <hr>
 
         <h3> NEW! Improving Classification by Improving Learning: Introducing Probabilistic Multi-Label Object Interaction Recognition </h3>
-        <a href="http://www.cs.bris.ac.uk/~mw1760/">Michael Wray</a>, <a href="http://www.davidemoltisanti.com/research">Davide Moltisanti</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>
+        <a href="http://mwray.github.io">Michael Wray</a>, <a href="http://www.davidemoltisanti.com/research">Davide Moltisanti</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>
         <p><i>On Arxiv, 2017.</i>
-        <a href="#" onclick="return show('ICIL');"> More Info.</a></p>
+        <a href="ICIL.html"> More Info.</a></p>
         <b> Available on </b>
         <a href = "https://arxiv.org/abs/1703.08338">Arxiv</a>.
         <p><iframe width="462" height="260" src="https://www.youtube.com/embed/v9PI2y3lpe0" frameborder="0" allowfullscreen></iframe></p>
@@ -50,10 +39,10 @@ h3   {color: darkcyan;}
         <hr>
 
         <h3> SEMBED: Semantic Embedding of Egocentric Action Videos </h3>
-        <a href="https://www.cs.bris.ac.uk/~mw1760/">Michael Wray</a>*, Davide Moltisanti*, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>
+        <a href="http://mwray.github.io">Michael Wray</a>*, <a href="http://www.davidemoltisanti.com/research">Davide Moltisanti</a>*, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a>. 
         <i>* Denotes equal contribution</i>
         <p><i>In Egocentric Perception, Interaction and Computing Workshop. ECCV 2016. </i>
-        <a href="#" onclick="return show('SEMBED');"> More Info.</a></p>
+        <a href="sembed.html"> More Info.</a></p>
         <b> Available on </b>
         <a href = "http://arxiv.org/abs/1607.08414">Arxiv</a>.
         <p><iframe width="462" height="260" src="https://www.youtube.com/embed/6bDDTIJUuic" frameborder="0" allowfullscreen></iframe></P>
@@ -64,109 +53,7 @@ h3   {color: darkcyan;}
         <p><i>In proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems. ACM, 2015.</i></P>
 
         <hr>
-    </div>
 
 
-    <!-- ICIL PAGE -->
-    <div id="ICIL" style="display:none">
-        <h4> Back to <a href="#" onclick="return show('Home');">Home</a></h4>
-    <h1>Improving Classification by Improving Labelling: Introducing Probabilistic Multi-Label Object Interaction Recognition</h1>
-    <h2>March 2017</h2>
-
-    <p><a href="http://www.cs.bris.ac.uk/~mw1760/">Michael Wray</a>, <a href="http://www.davidemoltisanti.com/research">Davide Moltisanti</a>, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
-
-        <p><img src="magic.png" alt="Overview" width=600/></p>
-
-
-        <p>
-        For the task of action recognition semantic ambiguities between verbs can
-        result in overlaps between classes. Because of this standard classification
-        techniques are unable to correctly learn valid verb labels for each video.
-        </p>
-        
-        <p>
-        Given a video segment containing an object interaction we model the
-        probability of a verb - out of a list of verbs - being chosen by human
-        annotators as a correct label for the video.
-        </p>
-        
-        <p>
-        We use a two-stream CNN and test a probabilistic classifier on two public
-        datasets, comprising of 1405 video sequences which we label, and outperform
-        conventional single-label classification by 11% and 6% on the two datasets
-        respectively. We also show that by learning probabilities the method is able
-        outperform majority voting and enables discovery of co-occurring labels.
-        </p>
-        
-        <h3>Publication:</h3>
-        Improving Classification by Improving Labelling: Introducing Probabilistic Multi-Label Object Interaction Recognition, Michael Wray, Davide Moltisanti, Walterio Mayol-Cuevas and Dima Damen (2017).
-        <b>Link:</b> <a href = "https://arxiv.org/abs/1703.08338">Arxiv</a>.
-        
-
-        <h3>Video:</h3>
-        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/v9PI2y3lpe0" frameborder="0" allowfullscreen></iframe></p>
-
-        <h3>Results</h3>
-        Example results when looking at the top 5 ground truth and predicted verbs:
-        <p><img src="results.png" alt="Results" width=900/></p>
-
-        <h3>Dataset:</h3>
-        <a href="http://www.cs.bris.ac.uk/~damen/BEOID/">Bristol Egocentric Object Interactions Dataset</a>
-        
-        
-        </div>
-
-
-    <!-- SEMBED PAGE -->
-    <div id="SEMBED" style="display:none">
-        <h4> Back to <a href="#" onclick="return show('Home');">Home</a></h4>
-    <h2>SEMBED: Semantic Embedding of Egocentric Action Videos - July 2016</h2>
-
-        <p><a href="https://www.cs.bris.ac.uk/~mw1760/">Michael Wray</a>*, Davide Moltisanti*, <a href="http://www.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a>, <a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
-        <i>* Denotes equal contribution</i>
-
-        <h3> Description </h3>
-        <p>
-        Egocentric Action Recognition has largely been performed on datasets where
-        annotators had a choice from a finite set of semantically distinct verbs. 
-        </p>
-        
-        <p>
-        When allowed free choice over both the verb chosen to describe an action and
-        the temporal boundaries the resulting dataset contains a wide variety of
-        different labels. Whilst these labels are diverse we treat them all as
-        correct labels. Standard one vs. all classifying techniques, such as SVM, 
-        are unable to deal with the ambiguities introduced by the free annotations 
-        and so a graphical approach is introduced. 
-        </p>
-        
-        <p>
-        We present SEMBED, a method which is capable of dealing with the ambiguity
-        within the dataset by embedding videos in a Semantic Visual Graph. Multiple
-        state-of-the-art features have been tested (in the form of Improved Dense 
-        Trajectories and Overfeat CNN) along with Bag of (Visual) Words and Fisher
-        Vectors as encoding methods. We find that SEMBED using the notion of 
-        embedding videos in a graph that are linked visually and/or semantically is
-        able to beat SVM by more than 5%.
-        </p>
-        
-        <h3>Publication:</h3>
-        <p>Michael Wray, Davide Moltisanti, Walterio Mayol-Cuevas and Dima Damen 
-        (2016). SEMBED: Semantic Embedding of Egocentric Action Videos. 
-        Egocentric Perception, Interaction and Computing Workshop ECCV 2016, 
-        Amsterdam, The Netherlands.
-        <a href = "http://arxiv.org/abs/1607.08414">Arxiv</a>.</p>
-        
-        <h3>Dataset:</h3>
-        <a href="http://www.cs.bris.ac.uk/~Damen/BEOID/">Bristol Egocentric Object Interactions Dataset</a>
-        
-        <h3>Video:</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6bDDTIJUuic" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <!-- NEW PAGE -->
-    <div id="TEST" style="display:none">
-        <h1>TEST</h1>
-    </div>
 </body>
 </html>

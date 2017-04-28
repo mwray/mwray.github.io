@@ -13,8 +13,8 @@
         $(function() {
             $("#test").click(function(e) {
                 var offset = $(this).offset();
-                var relativeX = (e.pageX - offset.left);
-                var relativeY = (e.pageY - offset.top);
+                var relativeX = (e.pageX - 3);
+                var relativeY = (e.pageY - 3);
                 console.log(e.pageX,':',e.pageY);
                 $(".position").val("afaf");
                 dot = document.createElement('div');

@@ -15,12 +15,12 @@
                 var offset = $(this).offset();
                 var relativeX = (e.pageX - offset.left);
                 var relativeY = (e.pageY - offset.top);
-                console.log(relativeX,':',relativeY);
+                console.log(e.pageX,':',e.pageY);
                 $(".position").val("afaf");
                 dot = document.createElement('div');
                 dot.className = "dot";
-                dot.style.left = relativeX + "px";
-                dot.style.top = relativeY + "px";
+                dot.style.left = e.pageX + "px";
+                dot.style.top = e.pageY + "px";
                 document.body.appendChild(dot);
             });
         });

@@ -24,7 +24,7 @@
                 for(var i=0; i < elements.length; i++) {
                     var x1 = elements[i].left;
                     var y1 = elements[i].top;
-                    var dist = (relativeX - x1) * (relativeX - x1) + (relativeY - y1) * (relativeY - y1);
+                    var dist = (relativeX - Number(x1)) * (relativeX - Number(x1)) + (relativeY - Number(y1)) * (relativeY - Number(y1));
                     console.log(dist, x1, y1);
                     if( dist < 9) {
                         exists = true;

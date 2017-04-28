@@ -22,9 +22,11 @@
                 var exists = false;
                 var found = -1;
                 for(var i=0; i < elements.length; i++) {
-                    var x1 = elements[i].left;
-                    var y1 = elements[i].top;
-                    var dist = (relativeX - Number(x1)) * (relativeX - Number(x1)) + (relativeY - Number(y1)) * (relativeY - Number(y1));
+                    var x1 = Number(elements[i].left);
+                    var y1 = Number(elements[i].top);
+                    var x2 = Number(relativeX);
+                    var y2 = Number(relativeY);
+                    var dist = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
                     console.log(dist, x1, y1);
                     if( dist < 9) {
                         exists = true;

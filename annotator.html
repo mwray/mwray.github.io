@@ -11,8 +11,8 @@
                 $(".position").val("afaf");
                 dot = document.createElement('div');
                 dot.className = "dot";
-                dot.style.left = event.pageX + "px";
-                dot.style.top = event.pageY + "px";
+                dot.style.left = relativeX + "px";
+                dot.style.top = relativeY + "px";
                 document.body.appendChild(dot);
             });
         });

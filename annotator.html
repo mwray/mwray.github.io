@@ -1,7 +1,16 @@
 <html>
 <head>
-    <script language="JavaScript" type="text/javascript" src="test.js">
-        </script>
+    <script language="JavaScript" type="text/javascript" >
+        $(function() {
+            $("#test").click(function(e) {
+                var offset = $(this).offset();
+                var relativeX = (e.pageX - offset.left);
+                var relativeY = (e.pageY - offset.top);
+                alert(relativeX+':'+relativeY);
+                $(".position").val("afaf");
+            });
+        });
+    </script>
     <Title>Annotation Website</Title>
 </head>
 <body>

@@ -9,14 +9,18 @@
                 var relativeY = (e.pageY - offset.top);
                 console.log(relativeX,':',relativeY);
                 $(".position").val("afaf");
+                dot = document.createElement('div');
+                dot.className = "dot";
+                dot.style.left = event.pageX + "px";
+                dot.style.top = event.pageY + "px";
+                document.body.appendChild(dot);
             });
         });
     </script>
     <Title>Annotation Website</Title>
 </head>
 <body>
-<p>Try clicking on the image!</p>
-    <div class="position">Hello</div><br/><br/>
+<div class="position"><H1>Try clicking on the image!</H1></div><br/><br/>
     <div>
         <div>
             <div>

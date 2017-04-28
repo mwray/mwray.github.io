@@ -17,11 +17,28 @@
                 var relativeY = (e.pageY - 3);
                 console.log(e.pageX,':',e.pageY);
                 $(".position").val("afaf");
-                dot = document.createElement('div');
-                dot.className = "dot";
-                dot.style.left = e.pageX + "px";
-                dot.style.top = e.pageY + "px";
-                document.body.appendChild(dot);
+                //check if exists
+                var elements = documentr.getElementByClassName("dot");
+                var exists = false;
+                var found = -1;
+                for(var i=0; i < elements.length; i++) {
+                    var x1 = elements[i].left;
+                    var y1 = elements[i].top;
+                    if((relativeX - x1) * (relativeX - x1) + (relativeY - y1) * (relativeY - y1) < 9) {
+                        exists = true;
+                        found = i;
+                    }
+                }
+                if(exists) {
+                    elements[found].left = -1000;
+                    elements[found].top = -1000;
+                } else {
+                    dot = document.createElement('div');
+                    dot.className = "dot";
+                    dot.style.left = relativeX  + "px";
+                    dot.style.top = relativeY + "px";
+                    document.body.appendChild(dot);
+                }
             });
         });
     </script>

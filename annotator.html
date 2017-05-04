@@ -2,8 +2,8 @@
 <head>
     <style>
         .dot {
-              width: 6px;
-              height: 6px;
+              width: 4px;
+              height: 4px;
               background-color: red;
               position: absolute;
             }
@@ -13,8 +13,8 @@
         $(function() {
             $("#test").click(function(e) {
                 var offset = $(this).offset();
-                var relativeX = (e.pageX - 3);
-                var relativeY = (e.pageY - 3);
+                var relativeX = (e.pageX - 2);
+                var relativeY = (e.pageY - 2);
                 console.log(e.pageX,':',e.pageY);
                 $(".position").val("afaf");
                 dot = document.createElement('div');

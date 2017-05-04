@@ -12,51 +12,29 @@
     <script language="JavaScript" type="text/javascript" >
         $(function() {
             $("#test").click(function(e) {
-                var isRightMb;
-                if("which" in e)
-                    isRightMb = e.which == 3;
-                else if("button" in e)
-                    isRightMb = e.button == 2;
-
                 var offset = $(this).offset();
                 var relativeX = (e.pageX - 3);
                 var relativeY = (e.pageY - 3);
                 console.log(e.pageX,':',e.pageY);
                 $(".position").val("afaf");
-                //check if exists
-                var elements = document.getElementsByClassName("dot");
-                var exists = false;
-                var found = -1;
-                for(var i=0; i < elements.length; i++) {
-                    var x1 = Number(elements[i].style.left.slice(0,-2));
-                    var y1 = Number(elements[i].style.top.slice(0,-2));
-                    var x2 = Number(relativeX);
-                    var y2 = Number(relativeY);
-                    var dist = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
-                    console.log(dist, x1, y1);
-                    if( dist < 81) {
-                        exists = true;
-                        found = i;
-                    }
+                dot = document.createElement('div');
+                dot.className = "dot";
+                dot.id = "d";
+                var removeDot = function(){
+                    console.log("DONE", this.id);
+                    this.remove();
                 }
-                if(exists) {
-                    elements[found].style.left = "-1000px";
-                    elements[found].style.top = "-1000px";
-                } else {
-                    dot = document.createElement('div');
-                    dot.className = "dot";
-                    dot.style.left = relativeX  + "px";
-                    dot.style.top = relativeY + "px";
-                    document.body.appendChild(dot);
-                }
-                console.log("RMB", isRightMb);
+                dot.onclick=removeDot;
+                dot.style.left = relativeX  + "px";
+                dot.style.top = relativeY + "px";
+                document.body.appendChild(dot);
             });
         });
     </script>
     <Title>Annotation Website</Title>
 </head>
-<body oncontextmenu="return false;">
-    <div class="position"><H1>Try clicking on the image!</H1></div><br/><br/>
+<body>
+<div class="position"><H1>Try clicking on the image!</H1></div><br/><br/>
     <div>
         <div>
             <div>

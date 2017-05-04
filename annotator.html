@@ -30,6 +30,15 @@
                 document.body.appendChild(dot);
             });
         });
+
+        $(function() {
+            $("#removeButton").click(function() {
+                var dots = document.getElementsByClassName("dot");
+                for(var i=0; i < dots.length(); i++) {
+                    dots[0].remove();
+                }
+            });
+        });
     </script>
     <Title>Annotation Website</Title>
 </head>
@@ -40,6 +49,11 @@
             <div>
                 <a id="test">
                     <img class="demo-box" src="Annotation_Images/1_0.jpg" />
+                </a>
+            </div>
+            <div>
+                <a id = "removeButtion">
+                    <button type="button">Remove All</button>
                 </a>
             </div>
         </div>

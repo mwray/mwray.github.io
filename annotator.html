@@ -75,15 +75,11 @@
         });
 
         function removeAll() {
-                console.log("REMOVING ALL");
                 var dots = document.getElementsByClassName("dot");
                 var max_l = dots.length;
-                if(confirm('Are you sure you want to remove all annotated vehicles?'))
-                {
-                    for(var i=0; i < max_l; i++) {
-                        dots[0].remove();
-                    }
-                }                  
+                for(var i=0; i < max_l; i++) {
+                    dots[0].remove();
+                }
         }
     </script>
     <Title>Annotation Website</Title>

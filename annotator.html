@@ -79,6 +79,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" >
         function doConfirm(msg, yesFn, noFn) {
+            msg = "Are you sure you want to " + msg;
             var removeBox = $("#removeBox");
             removeBox.find(".message").text(msg);
             removeBox.find(".yes,.no").unbind().click(function() {
@@ -132,7 +133,7 @@
             </div>
 
 
-            <button onclick='doConfirm("Are you sure?", function yes()
+            <button onclick='doConfirm("remove all?", function yes()
             {
                 removeAll()
             }, function no()
@@ -147,7 +148,7 @@
             </div>
 
 
-            <button onclick='doConfirm("Are you sure?", function yes()
+            <button onclick='doConfirm("Submit?", function yes()
             {
                 cConfirm()
             }, function no()

@@ -34,7 +34,8 @@
         function removeAll() {
                 console.log("REMOVING ALL");
                 var dots = document.getElementsByClassName("dot");
-                for(var i=0; i < dots.length; i++) {
+                var max_l = dots.length;
+                for(var i=0; i < max_l; i++) {
                     dots[0].remove();
                 }
         }

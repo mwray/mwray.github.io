@@ -44,14 +44,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" >
         function doConfirm(msg, yesFn, noFn) {
-            var confirmBox = $("#confirmBox");
-            confirmBox.find(".message").text(msg);
-            confirmBox.find(".yes,.no").unbind().click(function() {
-                confirmBox.hide();
+            var removeBox = $("#removeBox");
+            removeBox.find(".message").text(msg);
+            removeBox.find(".yes,.no").unbind().click(function() {
+                removeBox.hide();
             });
-            confirmBox.find(".yes").click(yesFn);
-            confirmBox.find(".no").click(noFn);
-            confirmBox.show();
+            removeBox.find(".yes").click(yesFn);
+            removeBox.find(".no").click(noFn);
+            removeBox.show();
         }
         $(function() {
             $("#test").click(function(e) {

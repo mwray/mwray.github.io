@@ -93,13 +93,11 @@
                 var offset = $(this).offset();
                 var relativeX = (e.pageX - 2);
                 var relativeY = (e.pageY - 2);
-                console.log(e.pageX,':',e.pageY);
                 $(".position").val("afaf");
                 dot = document.createElement('div');
                 dot.className = "dot";
                 dot.id = "d";
                 var removeDot = function(){
-                    console.log("DONE", this.id);
                     this.remove();
                 }
                 dot.onclick=removeDot;
@@ -118,7 +116,7 @@
         }
 
         function cConfirm() {
-            console.log("CONFIRMING");
+            var dots = documentr.getElementsByClassName("dot");
         }
     </script>
     <Title>Annotation Website</Title>
@@ -140,9 +138,8 @@
             }, function no()
             {
             });'>Remove All</button>
-        </div>
 
-        <div>
+
             <div id="confirmBox">
                 <div class="message"></div>
                 <button class="yes">Yes</button>

@@ -91,7 +91,7 @@
 <body>
 <div class="position"><H1>Try clicking on the image!</H1></div><br/><br/>
     <div>
-        <div id="confirmBox">
+        <div id="removeBox">
             <div class="message"></div>
             <button class="yes">Yes</button>
             <button class="no">No</button>
@@ -99,20 +99,14 @@
 
         <button onclick='doConfirm("Are you sure?", function yes()
         {
-             alert("YEs")
+            removeAll()
         }, function no()
         {
-            alert("no")
-        });'>submit</button>
+        });'>Remove All</button>
         <div>
             <div>
                 <a id="test">
                     <img class="demo-box" src="Annotation_Images/1_0.jpg" />
-                </a>
-            </div>
-            <div>
-                <a id = "removeButtion">
-                    <button onclick="removeAll()" type="button">Remove All</button>
                 </a>
             </div>
         </div>

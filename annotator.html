@@ -7,7 +7,7 @@
               background-color: red;
               position: absolute;
             }
-        #removeBox, #cofirmBox
+        #removeBox
         {
             display: none;
             background-color: #eee;
@@ -21,7 +21,23 @@
             box-sizing: border-box;
             text-align: center;
         }
-        #removeBox, #cofirmBox button {
+
+        #cofirmBox
+        {
+            display: none;
+            background-color: #eee;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            position: fixed;
+            width: 300px;
+            left: 50%;
+            margin-left: -150px;
+            padding: 6px 8px 8px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #removeBox button {
             background-color: #ccc;
             display: inline-block;
             border-radius: 3px;
@@ -31,11 +47,30 @@
             width: 80px;
             cursor: pointer;
         }
-        #removeBox, #cofirmBox button:hover
+        #confirmBox button {
+            background-color: #ccc;
+            display: inline-block;
+            border-radius: 3px;
+            border: 1px solid #aaa;
+            padding: 2px;
+            text-align: center;
+            width: 80px;
+            cursor: pointer;
+        }
+        #removeBox button:hover
         {
             background-color: #ddd;
         }
-        #removeBox, #cofirmBox .message
+        #removeBox .message
+        {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        #confirmBox button:hover
+        {
+            background-color: #ddd;
+        }
+        #confirmBox .message
         {
             text-align: left;
             margin-bottom: 8px;
@@ -91,33 +126,37 @@
 <body>
 <div class="position"><H1>Try clicking on the image!</H1></div><br/><br/>
     <div>
-        <div id="removeBox">
-            <div class="message"></div>
-            <button class="yes">Yes</button>
-            <button class="no">No</button>
+        <div>
+            <div id="removeBox">
+                <div class="message"></div>
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+
+
+            <button onclick='doConfirm("Are you sure?", function yes()
+            {
+                removeAll()
+            }, function no()
+            {
+            });'>Remove All</button>
         </div>
 
+        <div>
+            <div id="confirmBox">
+                <div class="message"></div>
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
 
-        <button onclick='doConfirm("Are you sure?", function yes()
-        {
-            removeAll()
-        }, function no()
-        {
-        });'>Remove All</button>
 
-        <div id="confirmBox">
-            <div class="message"></div>
-            <button class="yes">Yes</button>
-            <button class="no">No</button>
+            <button onclick='doConfirm("Are you sure?", function yes()
+            {
+                doConfirm()
+            }, function no()
+            {
+            });'>Confirm</button>
         </div>
-
-
-        <button onclick='doConfirm("Are you sure?", function yes()
-        {
-            doConfirm()
-        }, function no()
-        {
-        });'>Confirm</button>
         <div>
             <div>
                 <a id="test">

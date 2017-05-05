@@ -7,7 +7,7 @@
               background-color: red;
               position: absolute;
             }
-        #removeBox
+        #removeBox, #cofirmBox
         {
             display: none;
             background-color: #eee;
@@ -21,7 +21,7 @@
             box-sizing: border-box;
             text-align: center;
         }
-        #removeBox button {
+        #removeBox, #cofirmBox button {
             background-color: #ccc;
             display: inline-block;
             border-radius: 3px;
@@ -31,11 +31,11 @@
             width: 80px;
             cursor: pointer;
         }
-        #removeBox button:hover
+        #removeBox, #cofirmBox button:hover
         {
             background-color: #ddd;
         }
-        #removeBox .message
+        #removeBox, #cofirmBox .message
         {
             text-align: left;
             margin-bottom: 8px;
@@ -81,6 +81,10 @@
                     dots[0].remove();
                 }
         }
+
+        function doConfirm() {
+            console.log("CONFIRMING");
+        }
     </script>
     <Title>Annotation Website</Title>
 </head>
@@ -93,12 +97,27 @@
             <button class="no">No</button>
         </div>
 
+
         <button onclick='doConfirm("Are you sure?", function yes()
         {
             removeAll()
         }, function no()
         {
         });'>Remove All</button>
+
+        <div id="confirmBox">
+            <div class="message"></div>
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
+        </div>
+
+
+        <button onclick='doConfirm("Are you sure?", function yes()
+        {
+            doConfirm()
+        }, function no()
+        {
+        });'>Confirm</button>
         <div>
             <div>
                 <a id="test">

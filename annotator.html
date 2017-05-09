@@ -117,11 +117,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" >
 
-        var modal = document.getElementById('myModal');
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() {
-            modal.style.display = "none";
+        window.onload = function() {
+            var modal = document.getElementById('myModal');
+            var span = document.getElementsByClassName("close")[0];
         }
+        $(function() {
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        });
 
         window.onclick = function(event) {
             if (event.target == modal) {

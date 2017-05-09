@@ -117,20 +117,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" >
 
-        window.onload = function() {
-            var modal = document.getElementById('myModal');
-            var span = document.getElementsByClassName("close")[0];
-
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
 
         function doConfirm(msg, yesFn, noFn) {
             msg = "Are you sure you want to " + msg;
@@ -225,4 +211,18 @@
             </div>
         </div>
     </div>
+    <script>
+        var modal = document.getElementById('myModal');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>

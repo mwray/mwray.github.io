@@ -117,7 +117,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" >
 
-
+        var modal = document.getElementById('myModal');
         var span = document.getElementsByClassName("close")[0];
         span.onclick = function() {
             modal.style.display = "none";
@@ -176,22 +176,21 @@
 <body>
 <div class="position"><H1>Try clicking on the image!</H1></div><br/><br/>
     <div>
+        <div id="myModal" class="modal" style="display: block;">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <H1>Please Remember to scroll through the entire image.</H1>
+          </div>
+
+        </div>
+
         <div>
             <div id="removeBox">
                 <div class="message"></div>
                 <button class="yes">Yes</button>
                 <button class="no">No</button>
             </div>
-
-            <div id="myModal" class="modal" style="display: block;">
-
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <H1>Please Remember to scroll through the entire image.</H1>
-              </div>
-
-            </div>
-
 
             <button onclick='doConfirm("remove all dots?", function yes()
             {

@@ -45,6 +45,7 @@
               background-color: red;
               position: absolute;
             }
+
         #removeBox
         {
             display: none;
@@ -59,33 +60,7 @@
             box-sizing: border-box;
             text-align: center;
         }
-
-        #confirmBox
-        {
-            display: none;
-            background-color: #eee;
-            border-radius: 5px;
-            border: 1px solid #aaa;
-            position: fixed;
-            width: 300px;
-            left: 50%;
-            margin-left: -150px;
-            padding: 6px 8px 8px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
         #removeBox button {
-            background-color: #ccc;
-            display: inline-block;
-            border-radius: 3px;
-            border: 1px solid #aaa;
-            padding: 2px;
-            text-align: center;
-            width: 80px;
-            cursor: pointer;
-        }
-        #confirmBox button {
             background-color: #ccc;
             display: inline-block;
             border-radius: 3px;
@@ -104,18 +79,22 @@
             text-align: left;
             margin-bottom: 8px;
         }
-        #confirmBox button:hover
-        {
-            background-color: #ddd;
-        }
-        #confirmBox .message
-        {
-            text-align: left;
-            margin-bottom: 8px;
-        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script language="JavaScript" type="text/javascript" >
+
+
+        function updateSubmission() {
+            var dots = document.getElementsByClassName("dot");
+            var ann_box = document.getElementById("annotations");
+
+            var save_str = "";
+            for(var i = 0; i < dots.length; i++) {
+                save_str += " " + dots[i].style.left;
+                save_str += "_" + dots[i].style.top;
+            }
+            ann_box.value = save_str;
+        }
 
 
         function doConfirm(msg, yesFn, noFn) {
@@ -145,6 +124,7 @@
                 dot.style.left = relativeX  + "px";
                 dot.style.top = relativeY + "px";
                 document.body.appendChild(dot);
+                updateSubmission()
             });
         });
 
@@ -154,6 +134,7 @@
                 for(var i=0; i < max_l; i++) {
                     dots[0].remove();
                 }
+                updateSubmission()
         }
 
         function cConfirm() {
@@ -169,7 +150,7 @@
 
           <div class="modal-content">
             <span class="close">&times;</span>
-            <H1>Please Remember to scroll through the entire image.</H1>
+            <H1>Please Remember to Scroll Through the Entire Image.</H1>
           </div>
 
         </div>
@@ -187,21 +168,13 @@
             }, function no()
             {
             });'>Remove All</button>
-
-
-            <div id="confirmBox">
-                <div class="message"></div>
-                <button class="yes">Yes</button>
-                <button class="no">No</button>
-            </div>
-
-
-            <button onclick='doConfirm("submit?", function yes()
-            {
-                cConfirm()
-            }, function no()
-            {
-            });'>Confirm</button>
+        </div>
+        <div>
+            <form action="submitted.php" method="post" onsubmit="return confirm('Are you sure?');">
+                <input type="hidden" id="key" name="key" value="">
+                <input type="hidden" id="annotations" name="annotations" value = "">
+                <input type="submit" value="Submit">
+            </form>
         </div>
         <div>
             <div>

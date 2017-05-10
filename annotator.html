@@ -119,6 +119,7 @@
                 dot.id = "d";
                 var removeDot = function(){
                     this.remove();
+                    updateSubmission();
                 }
                 dot.onclick=removeDot;
                 dot.style.left = relativeX  + "px";

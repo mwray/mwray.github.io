@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Michael Wray - PhD Student - University of Bristol</title>
+</head>
+
+<body topmargin="15" leftmargin="15">
+
+
+    <div id="blueBar">
+        <h1>Towards An Unequivocal Representation of Actions</h1>
+        <h2>May 2018</h2>
+    </div>
+
+    <div class="container">
+        <h4> Back to <a href="index.html">Home</a></h4>
+
+        <p><a href="http://mwray.github.io">Michael Wray</a>, <a href="http://www.davidemoltisanti.com/research">Davide Moltisanti</a>,<a href="http://www.cs.bris.ac.uk/~damen">Dima Damen</a></p>
+
+        <p><img src="Towards/main.png" alt="Overview" width=600/></p>
+
+        <p>
+        This work introduces verb-only representations for actions and
+        interactions; the problem of describing similar motions (e.g. 'open
+        door', 'open cupboard'), and distinguish differing ones (e.g. 'open
+        door' vs 'open bottle') using verb-only labels. Current approaches for
+        action recognition neglect legitimate semantic ambiguities and class
+        overlaps between verbs (Fig. 1), relying on the objects to disambiguate
+        interactions.
+        </p>
+       
+        <p>
+       We deviate from single-verb labels and introduce a mapping between
+       observations and multiple verb labels - in order to create an
+       Unequivocal Representation of Actions. The new representation benefits
+       from increased vocabulary and a soft assignment to an enriched space of
+       verb labels.
+       </p>
+      
+       <p>
+       We learn these representations as multi-output regression, using a
+       two-stream fusion CNN. The proposed approach outperforms conventional
+       single-verb labels (also known as majority voting) on three egocentric
+       datasets for both recognition and retrieval.
+       </p>
+        
+        <h3>Publication:</h3>
+        Towards an Unequivocal Representation of Actions, Michael Wray, Davide Moltisanti and Dima Damen (2018).
+        <b>Link:</b> <a href = "https://arxiv.org/abs/1805.04026">Arxiv</a>.
+        
+
+        <h3>Video:</h3>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Taz9dfY_vd0" frameborder="0" allowfullscreen></iframe></p>
+
+        <h3>Results</h3>
+        Example cross dataset retrievals using a soft assigned multi label approach.
+        <p><img src="Towards/results.png" alt="Results" width=900/></p>
+
+        
+        <h4> Back to <a href="index.html">Home</a></h4>
+    </div>
+
+</body>
+</html>

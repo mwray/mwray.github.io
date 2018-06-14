@@ -172,11 +172,61 @@
               Current approaches for action recognition neglect legitimate
               semantic ambiguities and class overlaps between verbs, relying on
               the objects to disambiguate interactions.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2018</span>
-            </div>
-          </div>
+
+              <div class="modal fade" id="modalTowards" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h3 class="mb-0">Towards an Unequivocal Representation of Actions</h3>
+                      <p>This work introduces verb-only representations for
+                      actions and interactions; the problem of describing
+                      similar motions (e.g.  'open door', 'open cupboard'), and
+                      distinguish differing ones (e.g. 'open door' vs 'open
+                      bottle') using verb-only labels.  Current approaches for
+                      action recognition neglect legitimate semantic
+                      ambiguities and class overlaps between verbs, relying on
+                      the objects to disambiguate interactions.</p>
+
+                      <p> We deviate from single-verb labels and introduce a
+                      mapping between observations and multiple verb labels -
+                      in order to create an Unequivocal Representation of
+                      Actions. The new representation benefits from increased
+                      vocabulary and a soft assignment to an enriched space of
+                      verb labels.  </p>
+                  
+                      <p> We learn these representations as multi-output
+                      regression, using a two-stream fusion CNN. The proposed
+                      approach outperforms conventional single-verb labels
+                      (also known as majority voting) on three egocentric
+                      datasets for both recognition and retrieval.  </p>
+
+                      <h3 class="mb-0">Publication:</h3>
+                      Towards an Unequivocal Representation of Actions, Michael Wray, Davide Moltisanti and Dima Damen (2018).
+                      <b>Link:</b> <a href = "https://arxiv.org/abs/1805.04026">Arxiv</a>.
+                      
+
+                      <h3 class="mb-0">Video:</h3>
+                      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Taz9dfY_vd0" frameborder="0" allowfullscreen></iframe></p>
+
+                      <h3 class="mb-0">Results</h3>
+                      Example cross dataset retrievals using a soft assigned multi label approach.
+                      <p><img src="Towards/results.png" alt="Results" width=900/></p>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+                </div>
+                <div class="resume-date text-md-right">
+                  <span class="text-primary">May 2018</span>
+                  </br>
+                  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalTowards">More Info</button>
+                </div>
+              </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -193,8 +243,50 @@
               participant to start recording every time they entered their
               kitchen</p>
             </div>
+
+            <div class="modal fade" id="modalScaling" role="dialog">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h3 class="mb-0">Scaling Egocentric Vision: The EPIC-KITCHENS Dataset</h3>
+                    <p>The largest dataset in first-person (egocentric)
+                    vision; multi-faceted non-scripted recordings in native
+                    environments - i.e. the wearers' homes, capturing all
+                    daily activities in the kitchen over multiple days.
+                    Annotations are collected using a novel `live' audio
+                    commentary approach.</p>
+
+                    <h3 class="mb-0">Publication:</h3>
+                    Scaling Egocentric Vision: The EPIC-KITCHENS Dataset.
+                    Dima Damen, Hazel Doughty, Giovanni Maria Farinella,
+                    Sanja Fidler, Antonino Furnari, Evangelos Kazakos, Davide
+                    Moltisanti, Jonathan Munro, Toby Perrett, Will Price,
+                    Michael Wray (2018)
+                    </br>
+                    <b>Link:</b> <a href = "https://arxiv.org/abs/1804.02748">Arxiv</a>.
+                    
+
+                    <h3 class="mb-0">Video:</h3>
+                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Dj6Y3H0ubDw" frameborder="0" allowfullscreen></iframe></p>
+
+                    <h3 class="mb-0">Website</h3>
+                    <p> The official website of EPIC-Kitchens can be found 
+                    <a href = "https://epic-kitchens.github.io/2018">here.</a>
+                    This includes links to download the dataset and
+                    annotations.</p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">April 2018</span>
+              </br>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalScaling">More Info</button>
             </div>
           </div>
 
@@ -211,8 +303,41 @@
               of state-of-the-art approaches to changes in labeled temporal
               bounds, for object interaction recognition.</p>
             </div>
+
+            <div class="modal fade" id="modalTrespassing" role="dialog">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h3 class="mb-0">Trespassing the Boundaries: Labeling Temporal Bounds for Object Interactions in Egocentric Video</h3>
+                    <p>Manual annotations of temporal bounds for object
+                    interactions (i.e. start and end times) are typical
+                    training input to recognition, localization and detection
+                    algorithms. For three publicly available egocentric
+                    datasets, we uncover inconsistencies in ground truth
+                    temporal bounds within and across annotators and datasets.
+                    We systematically assess the robustness of state-of-the-art
+                    approaches to changes in labeled temporal bounds, for
+                    object interaction recognition.</p>
+
+                    <h3 class="mb-0">Publication:</h3>
+                    Trespassing the Boundaries: Labeling Temporal Bounds for
+                    Object Interactions in Egocentric Video. Davide Moltisanti,
+                    Michael Wray and Dima Damen(2017).
+                    </br>
+                    <b>Link:</b> <a href = "https://arxiv.org/abs/1703.09026">Arxiv</a>.
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">October 2017</span>
+              </br>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalTrespassing">More Info</button>
             </div>
           </div>
 
@@ -225,8 +350,62 @@
               the probability distribution over its potential semantic
               labels.</p>
             </div>
+
+            <div class="modal fade" id="modalSembed" role="dialog">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h3 class="mb-0">SEMBED: Semantic Embedding of Egocentric Action Videos</h3>
+                    <p> Egocentric Action Recognition has largely been
+                    performed on datasets where annotators had a choice from a
+                    finite set of semantically distinct verbs.  </p>
+                    
+                    <p> When allowed free choice over both the verb chosen to
+                    describe an action and the temporal boundaries the
+                    resulting dataset contains a wide variety of different
+                    labels. Whilst these labels are diverse we treat them all
+                    as correct labels. Standard one vs. all classifying
+                    techniques, such as SVM, are unable to deal with the
+                    ambiguities introduced by the free annotations and so a
+                    graphical approach is introduced.  </p>
+                    
+                    <p> We present SEMBED, a method which is capable of dealing
+                    with the ambiguity within the dataset by embedding videos
+                    in a Semantic Visual Graph. Multiple state-of-the-art
+                    features have been tested (in the form of Improved Dense
+                    Trajectories and Overfeat CNN) along with Bag of (Visual)
+                    Words and Fisher Vectors as encoding methods. We find that
+                    SEMBED using the notion of embedding videos in a graph that
+                    are linked visually and/or semantically is able to beat SVM
+                    by more than 5%.  </p>
+
+                    <h3 class="mb-0">Publication:</h3>
+                    SEMBED: Semantic Embedding of Egocentric Action Videos.
+                    Michael Wray(*), Davide Moltisanti(*), Walterio
+                    Mayol-Cuevas and Dima Damen(2016). <i> In Egocentric 
+                    Perception, Interaction and Computing Workshop ECCV 2016, 
+                    Amsterdam, The Netherlands.</i>
+                    <p><i>* Denotes equal contribution</i></p>
+                    <b>Link:</b> <a href = "https://arxiv.org/abs/1607.08414">Arxiv</a>.
+
+                    <h3 class="mb-0">Video:</h3>
+                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/6bDDTIJUuic" frameborder="0" allowfullscreen></iframe></p>
+
+                    <h3>Dataset:</h3>
+                    <a href="http://www.cs.bris.ac.uk/~Damen/BEOID/">Bristol Egocentric Object Interactions Dataset</a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
             <div class="resume-date text-md-right">
               <span class="text-primary">october 2016</span>
+              </br>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalSembed">More Info</button>
             </div>
           </div>
 
@@ -316,7 +495,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/website.min.js"></script>
 
   </body>
 

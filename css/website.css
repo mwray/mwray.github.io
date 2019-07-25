@@ -154,3 +154,8 @@ a:hover, a:focus, a:active {
 .modal-lg {
     max-width: 80% !important;
 }
+
+video {
+  width: 100%;
+  height: auto;
+}

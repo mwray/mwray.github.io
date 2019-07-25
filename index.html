@@ -55,6 +55,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pdfs/cv.pdf">CV</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -69,13 +72,31 @@
           <div class="subheading mb-5">PhD Student . University of Bristol . 
             michael (dot) wray (at) bristol (dot) ac (dot) uk
           </div>
-          <p class="mb-5">My research focuses on action recognition and understanding its links with language.</p>
+          <p class="mb-5">I am a final year PhD Student at the University of Bristol. My research focuses on action recognition and understanding its links with language.</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://github.com/mwray">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="pdfs/cv.pdf">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-id-card fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/user/mwray100/featured">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
@@ -87,6 +108,32 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="news">
         <div class="my-auto">
           <h2 class="mb-5">News</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Paper Accepted at ICCV </h3>
+              <div class="subheading mb-3">Fine-Grained Action Retrieval through Multiple Parts of Speech Embeddings</div>
+              <p>Our paper titled "Fine-Grained Action Retrieval through Multiple Parts of Speech Embeddings" 
+              was accepted as a poster presentation at ICCV 2019 (27th Oct-2nd Nov 2019).
+              pdf/video link to follow.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Paper Accepted at BMVC </h3>
+              <div class="subheading mb-3">Learning Visual Actions Using Multiple Verb-Only Labels</div>
+              <p>Our paper titled "Learning Visual Actions Using Multiple Verb-Only Labels" 
+              was accepted as a poster presentation at BMVC 2019 (9th-12th September 2019).
+              pdf/video link to follow.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2019</span>
+            </div>
+          </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -178,6 +225,147 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
+              <h3 class="mb-0">Fine-Grained Action Retrieval through Multiple Parts-of-Speech Embeddings </h3>
+              <div class="subheading mb-3"><!--<a href = "https://arxiv.org/abs/1804.02748">Arxiv</a></div>--!> Arxiv coming soon.</div>
+              <p>We address the problem of cross-modal fine-grained action
+                 retrieval between text and video. Cross-modal retrieval is commonly achieved
+                 through learning a shared embedding space, that can indifferently embed
+                 modalities. In this paper, we propose to enrich the embedding by disentangling
+                 parts-of-speech (PoS) in the accompanying captions. We build a separate
+                 multi-modal embedding space for each PoS tag. The outputs of multiple PoS
+                 embeddings are then used as input to an integrated multi-modal space, where we
+                 perform action retrieval </p>
+            </div>
+
+            <div class="modal fade" id="modalScaling" role="dialog">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h3 class="mb-0">Fine-Grained Action Retrieval through Multiple Parts-of-Speech Embeddings</h3>
+                    <p>We address the problem of cross-modal fine-grained action
+                     retrieval between text and video. Cross-modal retrieval is commonly achieved
+                     through learning a shared embedding space, that can indifferently embed
+                     modalities. In this paper, we propose to enrich the embedding by disentangling
+                     parts-of-speech (PoS) in the accompanying captions. We build a separate
+                     multi-modal embedding space for each PoS tag. The outputs of multiple PoS
+                     embeddings are then used as input to an integrated multi-modal space, where we
+                     perform action retrieval All embeddings are trained
+                     jointly through a combination of PoS-aware and PoS-agnostic losses. Our
+                     proposal enables learning specialised embedding spaces that offer multiple
+                     views of the same embedded entities.</p>
+
+                    <p>We report the first retrieval results on fine-grained
+                     actions for the large-scale EPIC dataset, in a generalised zero-shot setting.
+                     Results show the advantage of our approach for both video-to-text and
+                     text-to-video action retrieval. We also demonstrate the benefit of
+                     disentangling the PoS for the generic task of cross-modal video retrieval on
+                     the MSR-VTT dataset.</p>
+
+                     Overview of the approach:
+                     <p><img src="fga/main_fig.png" class="img-fluid" alt="Results"/></p>
+
+                    <h3 class="mb-0">Publication:</h3>
+                    Fine-Grained Action Retrieval through Multiple Parts-of-Speech Embeddings.
+                    Michael Wray, Diane Larlus, Gabriela Csurka and Dima Damen.
+                    ICCV 2019.
+                    </br>
+                    <b>Link:</b> Coming Soon <!--<a href = "https://arxiv.org/abs/1804.02748">Arxiv</a>.--!>
+                    
+
+                    <h3 class="mb-0">Video:</h3>
+                      <p>
+                        <video width=100% controls>
+                          <source src="fga/FGAR.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                      </p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2019</span>
+              </br>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalScaling">More Info</button>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Learning Visual Actions Using Multiple Verb-Only Labels </h3>
+              <div class="subheading mb-3"><!--<a href = "https://arxiv.org/abs/1804.02748">Arxiv</a></div>--!> Arxiv coming soon.</div>
+              <p>This work introduces verb-only representations for both 
+                 recognition and retrieval of visual actions, in video. Current 
+                 methods neglect legitimate semantic ambiguities between verbs,
+                 instead choosing unambiguous subsets of verbs along with 
+                 objects to dis-ambiguate the actions. We instead propose 
+                 multiple verb-only labels, which we learn through hard or soft 
+                 assignment as a regression. </p>
+            </div>
+
+            <div class="modal fade" id="modalScaling" role="dialog">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h3 class="mb-0">Learning Visual Actions Using Multiple Verb-Only Labels</h3>
+                    <p>This work introduces verb-only representations for both
+                       recognition and retrieval of visual actions, in video. Current methods neglect
+                       legitimate semantic ambiguities between verbs, instead choosing unambiguous
+                       subsets of verbs along with objects to disambiguate the actions. We instead
+                       propose multiple verb-only labels, which we learn through hard or soft
+                       assignment as a regression. This enables learning a much larger vocabulary of
+                       verbs, including contextual overlaps of these verbs.</p>
+
+                    <p>We collect multi-verbannotations for three action video
+                       datasets and evaluate the verb-only labelling represen-tations for action
+                       recognition and cross-modal retrieval (video-to-text and text-to-video).We
+                       demonstrate that multi-label verb-only representations outperform conventional
+                       sin-gle verb labels.  We also explore other benefits of a multi-verb
+                       representation includingcross-dataset retrieval and verb type (manner and
+                       result verb types) retrieval.</p>
+
+                    <h3 class="mb-0">Publication:</h3>
+                    Learning Visual Actions Using Multiple Verb-Only Labels.
+                    Michael Wray and Dima Damen.
+                    BMVC 2019.
+                    </br>
+                    <b>Link:</b> Coming Soon <!--<a href = "https://arxiv.org/abs/1804.02748">Arxiv</a>.--!>
+                    
+
+                    <h3 class="mb-0">Video:</h3>
+                      <p>
+                        <video width=100% controls>
+                          <source src="Learning/0615.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                      </p>
+                    <h3 class="mb-0">Annotations</h3>
+                    <p> The annotations used in the paper can be found
+                    <a href = "https://github.com/mwray/Multi-Verb-Labels">here.</a>
+                    </p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">July 2019</span>
+              </br>
+              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalScaling">More Info</button>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
               <h3 class="mb-0">Towards an Unequivocal Representation of Actions</h3>
               <div class="subheading mb-3"><a href = "https://arxiv.org/abs/1805.04026">Arxiv</a></div>
               <p>This work introduces verb-only representations for actions and
@@ -221,13 +409,18 @@
                       
 
                       <h3 class="mb-0">Video:</h3>
-                      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Taz9dfY_vd0" frameborder="0" allowfullscreen></iframe></p>
+                      <p>
+                        <video width=100% controls>
+                          <source src="Towards/towards.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                      </p>
 
                       <h3 class="mb-0">Presentation:</h3>
                       <p><iframe width="560" height="315" src="https://www.youtube.com/embed/8rndQTQsEjE" frameborder="0" allowfullscreen></iframe></p>
                       <h3 class="mb-0">Results</h3>
                       Example cross dataset retrievals using a soft assigned multi label approach.
-                      <p><img src="Towards/results.png" alt="Results" width=900/></p>
+                      <p><img src="Towards/results.png" class="img-fluid" alt="Results" width=900/></p>
 
                     </div>
                     <div class="modal-footer">
@@ -457,6 +650,17 @@
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">September 2015 - Current</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Naver Labs Europe</h3>
+              <div class="subheading mb-3">Research Internship</div>
+              <p>Supervised by Gabriela Csurka and Diane Larlus</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Autumn 2017</span>
             </div>
           </div>
 

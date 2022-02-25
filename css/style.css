@@ -116,11 +116,11 @@ ul.no-bullets {
 }
 
 .w3-opacity,.w3-hover-opacity:hover{
-    opacity:0.60
+    opacity:0.60;
 }
 
 .w3-opacity-off,.w3-hover-opacity-off:hover{
-    opacity:1
+    opacity:1;
 }
 
 .w3-modal{
@@ -134,5 +134,23 @@ ul.no-bullets {
     height:100%;
     overflow:auto;
     background-color:rgb(0,0,0);
-    background-color:rgba(0,0,0,0.4)
+    background-color:rgba(0,0,0,0.4);
+}
+
+.researchtable{
+    border-collapse:collapse
+}
+
+.researchtable th, .researchtable td{
+    border-bottom:1px solid;
+    padding:8px;
+    vertical-align: middle;
+}
+
+.researchtable td.img{
+    width:30%;
+}
+
+img {
+ width:100%;
 }

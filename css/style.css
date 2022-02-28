@@ -142,6 +142,7 @@ ul.no-bullets {
 }
 
 .researchtable th, .researchtable td{
+    border-top:1px solid;
     border-bottom:1px solid;
     padding:8px;
     vertical-align: middle;

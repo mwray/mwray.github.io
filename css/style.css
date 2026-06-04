@@ -172,3 +172,8 @@ img {
   border: 1px solid #ccc;
   padding: 10px;
 }
+
+.list-social-icons .list-inline-item {
+    width: 50px;
+    text-align: center;
+}

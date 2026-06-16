@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/academicons.min.css"/>
+    <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Michael Wray</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/website.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mainBar">
+        <div id="textBar">
+            <header>
+                <hr>
+                <h1>Behind the Scenes</h1>
+            </header>
+            <em>To return home, click <a href="index.html">here</a>.</em>
+            <p>This page contains a list of "behind the scenes" of a few papers
+            that I have worked on over the years. Hopefully, you may find it
+            interesting to gain some insights of the paper creation process and
+            what we thought about during the project that cannot be included
+            within a paper setting.</p>
+            <h3>Disclaimer</h3>
+            As a note, the below are from my fallible memory and should not be
+            taken as the ultimate source of truth!
+
+            <hr>
+
+            <h2 id="learning-visual-actions">
+                Learning Visual Actions Using Multiple Verb-Only Labels
+            </h2>
+            <p>This paper was published in BMVC in 2019, yet work started on
+            this paper around the end of 2016/early 2017. The previous work,
+            SEMBED, really opened pandora's box of how to deal with an open set
+            verb vocabulary, and so the natural next step was to explore
+            this.</p>
+
+            <p>As you may have realised, there was almost a 3 year gap between
+            beginning the work and publication, because of the paper's many
+            rejections due to us needing the time to understand this problem
+            (and perhaps for closed set classification to lose some
+            popularity...)</p>
+
+            <p>Whilst the idea didn't change much throughout development, i.e.
+            the multiple labels in hard/soft settings across the datasets and
+            the baselines, the framing did. It was only after a research visit
+            to Naver Labs Europe (and helpful discussions with Gabriela Csurka
+            and Diane Larlus) that certain aspects such as the action retrieval
+            setting, manner/result verbs, and the cross-dataset retrieval
+            really came about - tying the whole paper together. Another change
+            since the initial version of the paper was using sigmoid
+            cross-entropy instead of an L2 loss, as suggested by a reviewer. I
+            remember going down a bit of a rabbit hole trying to understand
+            theoretically why this should work better for the soft-assigned
+            labels in a continuous setting, but the reviewer knew what they
+            were talking about and it lead to a nice improvement!</p>
+
+            <p>There was a lot of exploration that didn't make the cut in the
+            final project, and some of this was included within my thesis. An
+            example thread of this was including losses to include information
+            from word2vec and WordNet, but these never helped the training and
+            were dropped from the final paper. </p>
+
+            <p>This paper ended up being a bit of a resilience test (though
+            what isn't in research) but when presenting this work, the feedback
+            was always positive which led to a continued drive to see the
+            project through to the end. Finally, a huge thanks to Dima for her
+            continued support during the project.</p>
+
+            <em>To return home, click <a href="index.html">here</a>.</em>
+
+            <hr>
+        </div>
+    </div>
+</body>

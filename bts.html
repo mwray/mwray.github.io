@@ -40,6 +40,44 @@
             <h3>Disclaimer</h3>
             As a note, the below are from my fallible memory and should not be
             taken as the ultimate source of truth!
+            <hr>
+
+
+            <h2 id="fine-grained-retrieval">
+                 Fine-Grained Action Retrieval Through Multiple Parts-of-Speech Embeddings 
+            </h2>
+            <p>This paper was techinically started on during my time in Naver
+            Labs Europe with Gabriela and Diane, but (as with a lot of research)
+            very little was kept from what I worked on initially. Whilst this
+            was always going to be a video retrieval paper in some form, the
+            idea to use Parts-of-Speech didn't come until after deciding to not
+            submit to CVPR 2019. </p>
+
+            <p>Having worked on the verb and noun clusters on EPIC-Kitchens-55
+            as well as a previous work all about verbs, it might have seemed
+            natural to disentangle the representations, yet took until winter
+            2018 for the idea to form. From then the method roughly fell in
+            place quite quickly (though the tensorflow implementation was
+            anything but quick when running...) Some of my favourite results of
+            the paper is the maximum activation neuron figure (Fig. 4). These
+            were (of course) some of the better neurons chosen, but there were
+            a good number of (mostly) monosemantic neurons in both embedding
+            spaces.</p>
+
+            <p>The MSR-VTT results came after Gabriela's initial suggestion,
+            and was a lot quicker to set up than I had thought thanks to
+            Antoine's easy to use codebase and gave a nice complement to the
+            story given how different retrieval was on EPIC compared to other
+            video retrieval settings.</p>
+
+            <p>Given the horrifically slow code, after starting the Post-Doc
+            one of the first tasks was to recreate the code in PyTorch, making
+            it more modern and removing a lot of the information tracking used
+            for debugging/figures (a fun lockdown task!) I still remember my
+            relief after the first run of the MMEN showed the results were
+            similar to the Tensorflow version. It was the fourth time
+            re-writing the codebase as the project had changed so there was
+            some precedent, but always good to confirm.</p>
 
             <hr>
 

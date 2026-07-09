@@ -8,26 +8,29 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Checkout
-        uses: actions/checkout@v2
+
       - name: update research
-        run: 
-            python get_research.py index.html research.html
+        run: |
+          python get_research.py index.html research.html
+
       - name: update news
-        run: 
-            python get_news.py index.html news.html
-      - uses: EndBug/add-and-commit@v9 
+        run: |
+          python get_news.py index.html news.html
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9 
         with:
           add: '.'
           author_name: Michael Wray
           author_email: michael.wray@bristol.ac.uk
-          commit: ''
-          cwd: '.'
           message: 'Updates index page'

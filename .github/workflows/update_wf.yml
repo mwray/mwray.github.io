@@ -2,7 +2,9 @@ name: Index Page Update
 
 on:
   push:
-    branches: [ "main" ]
+    paths:
+        - 'news.html'
+        - 'research.html'
   pull_request:
     branches: [ "main" ]
 
